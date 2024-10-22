@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    /* Rotate hover effect */
+    .rotate-on-hover:hover {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease-in-out;
+    }
+    /* Two-color gradient background */
+    .gradient-bg {
+        background: linear-gradient(161deg, #331d6e 50%, #e4e4eb 50%);
+    }
+    /* Positioning the icon */
+    .icon-container {
+      position: absolute;
+      top: -32px; /* Adjust this value to move the icon up or down */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    /* Ensure the card has relative positioning */
+    .service-card {
+      position: relative;
+      padding-top: 32px; /* Space for the icon */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Services Section -->
+  <div id="assignment" class="gradient-bg pt-4 pb-16 py px-4 sm:px-6 lg:px-8">
+    <h2 class="text-5xl font-bold text-white mb-12 pb-8">OUR SERVICES</h2>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- Service 1 -->
+      <div class="service-card mb-2 bg-white p-6 rounded-lg shadow-lg transform transition duration-500">
+        <div class="icon-container">
+          <div class="w-16 h-16 bg-white rounded-full border-4 border-purple-800 flex items-center justify-center rotate-on-hover">
+            <i class="fas fa-tools text-3xl text-purple-800"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold text-center mb-2">Emergency Plumbing Services</h3>
+        <p class="text-gray-600 text-center">Our plumbers are ready 24/7 for emergencies - including nights, weekends, and holidays.</p>
+        <div class="text-center mt-4">
+          <a href="#" class="text-purple-800 font-bold">Explore This Service &gt;</a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card mb-2 bg-white p-6 rounded-lg shadow-lg transform transition duration-500">
+        <div class="icon-container">
+          <div class="w-16 h-16 bg-white rounded-full border-4 border-purple-800 flex items-center justify-center rotate-on-hover">
+            <i class="fas fa-plug text-3xl text-purple-800"></i>
+          </div>
+        </div>
+        <h3 class="text-xl  font-bold text-center mb-2">Plumbing and Drains</h3>
+        <p class="text-gray-600 text-center">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+        <div class="text-center mt-4">
+          <a href="#" class="text-purple-800 font-bold">Explore This Service &gt;</a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card mb-2 bg-white p-6 rounded-lg shadow-lg transform transition duration-500">
+        <div class="icon-container">
+          <div class="w-16 h-16 bg-white rounded-full border-4 border-purple-800 flex items-center justify-center rotate-on-hover">
+            <i class="fas fa-tint text-3xl text-purple-800"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold text-center mb-2">Water Damage</h3>
+        <p class="text-gray-600 text-center">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+        <div class="text-center mt-4">
+          <a href="#" class="text-purple-800 font-bold">Explore This Service &gt;</a>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card bg-white mb-2 p-6 rounded-lg shadow-lg transform transition duration-500">
+        <div class="icon-container">
+          <div class="w-16 h-16 bg-white rounded-full border-4 border-purple-800 flex items-center justify-center rotate-on-hover">
+            <i class="fas fa-fire text-3xl text-purple-800"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold text-center mb-2">Water Heaters</h3>
+        <p class="text-gray-600 text-center">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+        <div class="text-center mt-4">
+          <a href="#" class="text-purple-800 font-bold">Explore This Service &gt;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
